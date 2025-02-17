@@ -23,7 +23,7 @@
 <dialog
 	bind:this={dialog}
 	class={cn(
-		'min-h-md relative mx-auto my-auto hidden min-w-sm flex-col items-start gap-4 rounded-lg p-4 shadow-2xl backdrop:bg-black/10 backdrop:backdrop-blur-xs open:flex',
+		'min-h-md relative mx-auto my-auto hidden min-w-sm flex-col items-start gap-4 rounded-xs p-4 shadow-2xl backdrop:bg-black/10 backdrop:backdrop-blur-xs open:flex',
 		clazz
 	)}
 	{...others}

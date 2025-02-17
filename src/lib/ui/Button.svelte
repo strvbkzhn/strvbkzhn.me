@@ -7,7 +7,6 @@
 	type Props<T extends 'a' | 'button'> = {
 		as?: 'a' | 'button';
 		external?: boolean;
-		equilateral?: boolean;
 	} & (T extends 'a' ? HTMLAnchorAttributes : HTMLButtonAttributes);
 
 	let {
@@ -15,7 +14,6 @@
 		class: clazz,
 		as = 'a',
 		external = false,
-		equilateral = false,
 		...others
 	}: Props<'a' | 'button'> = $props();
 
@@ -63,11 +61,8 @@
 >
 	<span
 		class={cn(
-			'relative inline-block cursor-pointer text-gray-500 transition-all duration-200 ease-linear before:absolute before:-top-0.5 before:bottom-0.5 before:-z-10 before:h-[calc(100%+0.25rem)] before:[transform:translate(var(--before-translate-x,0px),var(--before-translate-y,0px))] before:rounded-md before:transition-all before:duration-150 before:ease-linear hover:z-20 hover:text-black hover:before:bg-neutral-200',
-			{
-				'before:right-0.5 before:-left-0.5 before:w-[calc(100%+0.25rem)]': equilateral,
-				'before:right-2.5 before:-left-2.5 before:w-[calc(100%+1.25rem)]': !equilateral
-			},
+			"hover:z- relative inline-block cursor-pointer text-blue-500 transition-all duration-200 ease-linear before:absolute before:inset-1/2 before:-top-0.5 before:right-2 before:bottom-0.5 before:-left-2 before:-z-1 before:[transform:translate(var(--before-translate-x,0px),var(--before-translate-y,0px))] before:bg-[length:100%_100%] before:bg-center before:transition-all before:duration-150 before:ease-linear before:content-[''] hover:before:h-[calc(100%+0.25rem)] hover:before:w-[calc(100%+1rem)] hover:before:bg-[url(/images/bg-strong.svg)]",
+			'backdrop-opacity-10 before:opacity-0 hover:before:opacity-100',
 			clazz
 		)}
 	>
