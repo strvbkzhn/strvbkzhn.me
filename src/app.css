@@ -1,1 +1,12 @@
 @import 'tailwindcss';
+
+@font-face {
+	font-family: 'Excalifont';
+	src: local('Excalifont'), local('excalifont'), url('/fonts/Excalifont-Regular.woff2');
+	font-display: fallback;
+}
+
+@theme {
+	/* --font-sans: 'Gaegu', serif; */
+	--font-sans: 'Excalifont', sans-serif;
+}
