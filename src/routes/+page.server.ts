@@ -16,9 +16,10 @@ export const actions = {
 		const country = ip && (await getCountry(ip));
 
 		const sent = await sendMessage(
-			`<code style="padding:12px 14px;background:#EFF6FF4D;display:block;border-radius:2px;white-space:pre-wrap;border:2px dotted #8ec5ff;">
-Country: ${country || 'N/A'}, IP: ${ip || 'N/A'}
-<hr style="border-top:2px dotted #8ec5ff;margin:12px -13px;" />
+			`<code style="padding:12px 14px;background:#EFF6FF4D;display:block;border-radius:2px;white-space:pre-wrap;border:2px dotted #8ec5ff;">Country: ${country || 'N/A'}, IP: ${ip || 'N/A'}
+
+···
+
 ${message}
 </code>`
 		);
