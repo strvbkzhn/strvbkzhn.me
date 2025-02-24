@@ -1,18 +1,16 @@
 <script lang="ts">
-	import { Button, Dialog } from '$lib/ui';
+	import { Button } from '$lib/ui';
 </script>
 
-<header class="text-lg">
+<header>
 	<nav class="mx-auto flex max-w-5xl items-center justify-end gap-8 p-4 pt-12">
-		<Button href="/">home</Button>
-		<Dialog title="Dialog title">
-			{#snippet dialogTrigger(open)}
-				<Button as="button" onclick={open}>dialog</Button>
-			{/snippet}
-		</Dialog>
+		<!-- <Button href="/">home</Button> -->
+		<a href="/">
+			<img src="/favicon.png" alt="Bekzhan" class="h-7 w-7" />
+		</a>
 		<ul class="flex flex-1 items-center justify-end gap-8">
 			<li>
-				<Button href="/info">info</Button>
+				<Button href="/">info</Button>
 			</li>
 			<li>
 				<Button href="/work">work</Button>

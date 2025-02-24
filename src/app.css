@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @font-face {
 	font-family: 'Excalifont';
 	src: local('Excalifont'), local('excalifont'), url('/fonts/Excalifont-Regular.woff2');
@@ -7,6 +9,8 @@
 }
 
 @theme {
-	/* --font-sans: 'Gaegu', serif; */
 	--font-sans: 'Excalifont', sans-serif;
+	--font-cloudflare:
+		-apple-system, system-ui, blinkmacsystemfont, Segoe UI, roboto, oxygen, ubuntu, Helvetica Neue,
+		arial, sans-serif;
 }

@@ -23,14 +23,14 @@
 <dialog
 	bind:this={dialog}
 	class={cn(
-		'min-h-md relative mx-auto my-auto hidden min-w-sm flex-col items-start gap-4 rounded-xs p-4 shadow-2xl backdrop:bg-black/10 backdrop:backdrop-blur-xs open:flex',
+		'relative mx-auto my-auto hidden max-w-md min-w-sm flex-col items-start gap-2 rounded-xs px-5 py-4 shadow-2xl backdrop:bg-black/10 backdrop:backdrop-blur-xs open:flex sm:min-w-md',
 		clazz
 	)}
 	{...others}
 >
-	<div class="flex w-full items-center justify-between pr-2 pl-1">
+	<div class="flex w-full items-center justify-between">
 		<p>{title}</p>
-		<Button as="button" onclick={close}>X</Button>
+		<Button as="button" class="text-red-500" onclick={close}>X</Button>
 	</div>
 	{@render children?.({ close })}
 </dialog>

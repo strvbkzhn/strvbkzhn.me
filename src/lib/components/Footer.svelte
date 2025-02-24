@@ -2,7 +2,7 @@
 	import { Button } from '$lib/ui';
 </script>
 
-<footer class="text-lg">
+<footer>
 	<div class="mx-auto flex max-w-5xl flex-wrap items-start justify-between gap-2 p-4 sm:gap-4">
 		<section class="flex sm:flex-col">
 			<h2 class="whitespace-nowrap">me —&nbsp;</h2>
@@ -12,11 +12,11 @@
 		</section>
 		<section class="flex sm:flex-col">
 			<h2 class="whitespace-nowrap">contact —&nbsp;</h2>
-			<Button href="mailto:bekzhan@example.com" external>bekzhan@example.com</Button>
+			<Button href="https://forms.gle/A5FhrmeDsqECogj9A" external>submit a contact form</Button>
 		</section>
 		<section class="flex sm:flex-col">
 			<h2 class="whitespace-nowrap">social —&nbsp;</h2>
-			<div class="flex flex-wrap">
+			<div class="flex flex-wrap items-end">
 				<Button href="https://www.linkedin.com/in/strvbkzhn/" external>Linkedin</Button>
 				,&nbsp;
 				<Button href="https://www.instagram.com/strvbkzhn/" external>Instagram</Button>
